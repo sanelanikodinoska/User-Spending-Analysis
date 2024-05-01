@@ -1,2 +1,6 @@
-.idea
 .venv
+app_User_Spending
+clientScript
+telegram_credentials
+testApi
+
