@@ -13,7 +13,7 @@ app = Flask(__name__)
 # SQL database connection
 def get_sqlite_connection():
     try: 
-        connection = sqlite3.connect("C:/Users/user/Python developer/PYTHON developer_Project/users_vouchers.db")
+        connection = sqlite3.connect("path")
         cursor = connection.cursor()
         return connection, cursor
     except Exception as e:
@@ -22,7 +22,7 @@ def get_sqlite_connection():
 # MongoDB connection
 def get_mongo_db():
     try: 
-        client = pymongo.MongoClient('mongodb+srv://sanelatasnik:admin@learning.rsjglvl.mongodb.net/')
+        client = pymongo.MongoClient('mongodb+srv://password:admin@learning.rsjglvl.mongodb.net/')
         db = client['users_vouchers']
         return db
     except Exception as e:
