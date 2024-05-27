@@ -81,7 +81,7 @@ class Test_app_User_Spending(unittest.TestCase):
     def send_messages_to_telegram(self):
         post_data={'age 18 to 24': 2509.74, 'age 25 to 30': 2471.58, 'age 31 to 36': 2529.15, 'age 37 to 47': 2495.84, 'older then 47': 2485.77}
         
-        responce = self.app.post('/send_message_to_telegram', json=post_data, bot = '6858083060:AAGHUcvvjDXRJ22pQaL12EOP-8UOKorwZuk', chat_id = '-4113930804')
+        responce = self.app.post('/send_message_to_telegram', json=post_data, bot = 'your_bot', chat_id = 'some_number')
         self.assertEqual(responce.status_code, 200)
         result = json.loads(responce.data)
         self.assertEqual(result, {'age 18 to 24': 2509.74, 'age 25 to 30': 2471.58, 'age 31 to 36': 2529.15, 'age 37 to 47': 2495.84, 'older then 47': 2485.77} )
