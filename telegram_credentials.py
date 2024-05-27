@@ -1,6 +1,6 @@
-bot_token = '6858083060:AAGHUcvvjDXRJ22pQaL12EOP-8UOKorwZuk'
+bot_token = 'your_token'
 
-bot_name = '@AvgSpendingBot'
+bot_name = 'yout_bot_name'
 
-channel_name = "@avg_spendings"
-channel_id = -4113930804
+channel_name = "your_channel_name"
+channel_id = some_number
